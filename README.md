@@ -1,10 +1,10 @@
-# Switching Connections between Cassandra or Apollo with the Java DataStax Driver for Apache Cassandra 4.x
+# Switching Connections between Cassandra or Apollo with the Java Driver
 This application shows how to use both the v3 or v4 of the Java driver to connect to Cassandra or an Apollo database at runtime using environment variables.
 
 Contributors: [Dave Bechberger](https://github.com/bechbd) 
 
 ## Objectives
-* To demonstrate how to specify at runtime between a Cassandra client configuration and an Apollo configuration for the same application.
+* To show how to specify at runtime between a Cassandra client configuration and an Apollo configuration for the same application.
 * To show how this works for both the v3 and the v4 versions of the driver
 
 ## Project Layout
