@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="switching-configurations-v3" />
+        <module name="switching-configurations-v4" />
+        <module name="switching-connection-configurations-java-driver-oss-v4" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
