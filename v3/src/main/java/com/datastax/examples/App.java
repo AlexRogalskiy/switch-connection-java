@@ -54,7 +54,7 @@ public class App {
 
         //If a keyspace is specified then use it - This is required for Apollo
         if (System.getenv("KEYSPACE") != null) {
-            return builder.build().connect(System.getenv("DBUSERNAME"));
+            return builder.build().connect(System.getenv("KEYSPACE"));
         } else {
             return builder.build().connect();
         }
