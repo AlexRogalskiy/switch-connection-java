@@ -7,7 +7,7 @@ Contributors: [Dave Bechberger](https://github.com/bechbd)
 * To demonstrate how to specify at runtime between a Cassandra client configuration and an Apollo configuration for the same application.
 
 ## Project Layout
-* [App.java](/src/main/java/com/datastax/examples/App.java) - The main application file which contains all the logic to switch between the configurations
+* [App.java](/v3/src/main/java/com/datastax/examples/App.java) - The main application file which contains all the logic to switch between the configurations
 
 ## How this Sample Works
 This sample uses environment variables to specify the configuration parameters and whether to use a Cassandra configuration or an Apollo configuration.  

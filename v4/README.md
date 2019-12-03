@@ -7,16 +7,16 @@ Contributors: [Dave Bechberger](https://github.com/bechbd)
 * To demonstrate how to specify at runtime between a Cassandra client configuration and an Apollo configuration for the same application.
 
 ## Project Layout
-* [App.java](/src/main/java/com/datastax/examples/App.java) - The main application file which contains all the logic to switch between the configurations
-* [application.apollo.conf](/src/main/resources/application.apollo.conf) - The configuration file for Apollo
-* [application.cassandra.conf](/src/main/resources/application.cassandra.conf)  - The configuration file for Cassandra
+* [App.java](/v4/src/main/java/com/datastax/examples/App.java) - The main application file which contains all the logic to switch between the configurations
+* [application.apollo.conf](/v4/src/main/resources/application.apollo.conf) - The configuration file for Apollo
+* [application.cassandra.conf](/v4/src/main/resources/application.cassandra.conf)  - The configuration file for Cassandra
 
 ## How this Sample Works
 This sample uses environment variables to specify the configuration parameters and whether to use a Cassandra configuration or an Apollo configuration.  
 All the logic to switch between the configurations occurs in the `getClientConfiguration` method.  
-* If you specify the `USEAPOLLO` environment variable and it is `true` then the [application.apollo.conf](/src/main/resources/application.apollo.conf) 
+* If you specify the `USEAPOLLO` environment variable and it is `true` then the [application.apollo.conf](/v4/src/main/resources/application.apollo.conf) 
 is loaded from the `/resources` directory via the classpath.
-* If you so not specify the `USEAPOLLO` environment variable or it is `false` then the [application.cassandra.conf](/src/main/resources/application.cassandra.conf) 
+* If you so not specify the `USEAPOLLO` environment variable or it is `false` then the [application.cassandra.conf](/v4/src/main/resources/application.cassandra.conf) 
 is loaded from the `/resources` directory via the classpath.
 
 While these criteria added to the configuration are commonly used configuration parameters you are able to specify any additional ones in the code. 
